@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="script.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -22,34 +23,52 @@
         <div id="info">
             <small><a id="rulink_ru" href="index.html" title="Русский">RU</a> | <a id="enlink_ru" href="en.html" title="English">EN</a></small>
             <h1><span itemprop="name">Максим Назаренко</span></h1>
-            <h1><span itemprop="jobTitle">Тестировщик ПО</span></h1>
+            <h1><span itemprop="jobTitle">QA Engineer</span></h1>
             <small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span>75800</span>
+                <img src="images/ico/local-address-small.jpg" alt="address icon" itemprop="image" />
                 <span itemprop="addressRegion">Херсон</span>,
-                <span itemprop="addressCountry">Украина</span>
+                <span itemprop="addressCountry">Украина</span>,
+                <span itemprop="postalСode">75800</span>
             </small>
-            <small><span itemprop="phone">Телефон: +38(093)-919-63-56</span></small>
-            <small><span itemprop="email">Email: maxim.nazarenko@protonmail.com</span></small>
-            <small><span itemprop="skype">Skype: maxnaz25</span></small>
+            <small>
+                <img src="images/ico/mobile-small.jpg" alt="address icon" itemprop="image" />
+                <span itemprop="phone"><a href="tel: +380683925180">+38(068)-392-51-80</a></span>
+            </small>
+            <small>
+                <img src="images/ico/email-small.jpg" alt="address icon" itemprop="image" />
+                <span itemprop="email"><a href="mailto: maximnazarenko86@gmail.com">maximnazarenko86@gmail.com</a></span>
+            </small>
+            <small>
+                <img src="images/ico/skype26-small.jpg" alt="address icon" itemprop="image" />
+                <span itemprop="skype"><a href="skype: maxnaz25?call">maxnaz25</a></span>
+            </small>
         </div>
 
         <div id="photo">
-            <img src="images/max-naz.jpg" alt="Maxim Nazarenko resume photo avatar" itemprop="image" />
+            <img src="images/max-naz.jpg" alt="resume photo" itemprop="image" />
         </div>
     </header>
 
     <section id="profile">
-        <h2>My History &amp; Profile</h2>
-        <p itemprop="description">My career history began with a job as a System Engineer in 2011. I have worked in this specialty in several companies, and also worked for 2 years as a teacher of IT disciplines. In 2017 I indirectly started testing several applications, after which I decided to retrain as a Software Quality Engineer, as I was fascinated by this IT field.</p>
-        <p>I have 1,5+ years of experience in Web/Mobile/Desktop applications testing. Mainly I perform Web and Mobile manual testing but insofar as I saw the necessity and benefits of test automation, recently I started to learn the fundamentals of automation testing of Web applications to improve my professional skills.</p>
+        <h2>Немного обо мне</h2>
+        <p itemprop="description">
+            Опыт работы в сфере IT(системное администрирование, техподдержка, преподавание IT дисциплин) 6+ лет. </br>
+            Опыт работы в сфере тестирования ПО(ручное тестирование web и mobile приложений) 1+ год.</br>
+            В 2017 году успешно закончил онлайн курс <a href="https://drive.google.com/file/d/1Ackc2R1L8nc10jTVHdNJ49PxsBl1KG6i/view">"Основы тестирования ПО"</a> от компании QATestLab.</br>
+            В 2018 году успешно закончил онлайн курс <a href="https://drive.google.com/file/d/1KXngj8B9R5EP5kn1g3vPIirayQhshxlU/view">"Основы автоматизации тестирования web приложений"</a>, от компании QATestLab, с использованием: Java, Maven, Selenium WebDriver, TestNG, Selenium Grid, Selendroid, Git, Intelij Idea.</br>
+            В последнее время изучаю инструменты для автоматизации тестирования(Selenium + Java) и работаю на фриланс проектах. В дальнейшем хочу продолжать работать и развиваться в области обеспечения качества ПО.
+        </p>
     </section>
 
     <section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
-        <h2 itemprop="name">Skill-set:</h2>
+        <h2 itemprop="name">Что я умею:</h2>
         <section id="skills-left">
-            <h4 itemprop="about">QA Skills</h4>
             <ul>
-                <li itemprop="itemListElement">Perform Manual and Automated Testing.</li>
+                <li itemprop="itemListElement">Применять в работе техники тест дизайна<a id="button" href="#" onclick="toggleTextVisibility(); return false;">+</a></li>
+                <div id="skills-text">
+                    <p>Pair Wise</p>
+                    <p>Анализ граничных значений</p>
+                </div>
                 <li itemprop="itemListElement">Discover Bugs Within Software.</li>
                 <li itemprop="itemListElement">Identify, Isolate, and Track Bugs Throughout Testing.</li>
                 <li itemprop="itemListElement">Identify Potential Problems Users May Encounter.</li>
